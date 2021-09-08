@@ -31,6 +31,7 @@ public class Test  {
         loginPage.email.sendKeys("miki@yahoo.com");
         loginPage.password.click();
         loginPage.password.sendKeys("mikiyahoo");
+        //add comment just for practice
         loginPage.submit.click();
         BrowserUtils.waitFor(2);
         Assert.assertEquals(loginPage.Text1.getTagName(),"span");
